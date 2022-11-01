@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>About Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'aboutstyle.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  </head>
+  <body>
+    
+    <div class = "about-wrapper">
+      <div class = "about-left">
+        <div class = "about-left-content">
+          <div>
+            <div class = "shadow">
+              <div class = "about-img">
+                <img src = "{% static 'pic.jpg' %}" alt = "about image">
+              </div>
+            </div>
+
+            <h2>PDC LAB<br>Project</h2>
+            <h3>CAT 2</h3>
+          </div>
+
+          <ul class = "icons">
+            <li><a href="http://facebook.com/saran.saran.1257604"><i class = "fab fa-facebook-f"></i></a></li>
+            <li><a href="https://twitter.com/srm_2121?t=p9asuLXZhVyaOZmcwHY2xQ&s=08"><i class = "fab fa-twitter"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/akshay-umapathi-809643254"><i class = "fab fa-linkedin"></i></a></li>
+            <li><a href="https://www.instagram.com/_avudai/"><i class = "fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class = "about-right">
+        <h1>Done BY<span>!</span></h1>
+        <h2>Akshay</h2>
+        <h2>Avudaiappan</h2>
+        <h2>Shri Rama Moorthy</h2>
+        <div class = "about-btns">
+          <a href="http://127.0.0.1:8000/"><button type = "button" class = "btn btn-pink">Home</button></a>
+          <a href="http://127.0.0.1:8000/contactpage/"><button type = "button" class = "btn btn-white">Contact US</button></a>
+        </div>
+
+        <div class = "about-para">
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+</html>

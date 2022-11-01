@@ -239,7 +239,7 @@ otherPlayerArray.forEach(function (player) {
   player.addEventListener("mouseleave", displayName);
 });
 
-// This below function is so dirty and repetitive, I should refactor it
+
 function displayName(event) {
   playerLineArray.forEach(function (line) {
     if (event.target.classList.contains("silva")) {

@@ -5,12 +5,11 @@
   <meta charset="UTF-8">
   <title>Football player stats</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ek+Mukta">
-  <link rel="stylesheet" href="{% static 'homestyle.css' %}">
-
+  <link rel="stylesheet" href="{% static 'homestyle2.css' %}">
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<script  src="templates\static\stats.js"></script>
+<script  type="text/javascript" src="{% static 'stats2.js' %}" async></script>
 <div class='container'>
   <div class="playerBox">
     <svg class='playerList' viewBox='0 0 650 200' width='600px' height='200px'>
@@ -23,6 +22,9 @@
         </clipPath>
         <clipPath id='clipP'>
           <rect x='450' width='200' height='200' rx='10' ry='10' />
+        </clipPath>
+        <clipPath id='clipM'>
+          <rect x='400' width='200' height='200' rx='10' ry='10' />
         </clipPath>
         <filter id='shadow'>
           <feGaussianBlur in='SourceAlpha' stdDeviation='2' result='flou' />
@@ -39,12 +41,15 @@
       <image id='imageSilva' class='grayscale otherPlayer silva' xlink:href='//upload.wikimedia.org/wikipedia/commons/b/b8/20141118_1838_AUTBRA_4935.jpg' width='200' height='200' preserveAspectRatio='xMidYMin slice' style='clip-path:url(#clipS)' />
       <image id='imageRonaldo' class='grayscale otherPlayer ronaldo' xlink:href='//upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Cristiano_Ronaldo_2018.jpg/440px-Cristiano_Ronaldo_2018.jpg' x='225' width='200' height='200' preserveAspectRatio='xMidYMin slice' style='clip-path: url(#clipR)' />
       <image id='imagePogba' class='grayscale otherPlayer pogba' xlink:href='//upload.wikimedia.org/wikipedia/commons/thumb/f/fc/FRA-ARG_%2811%29_-_Paul_Pogba_%28cropped%29.jpg/440px-FRA-ARG_%2811%29_-_Paul_Pogba_%28cropped%29.jpg' x='450' width='200' height='200' preserveAspectRatio='xMidYMin slice' style='clip-path:url(#clipP)' />
+      <image id='imagemessi' class='grayscale otherPlayer messi' xlink:href='templates\static\messi.jpg' x='450' width='200' height='200' preserveAspectRatio='xMidYMin slice' style='clip-path:url(#clipM)' />
       <line class='silva playerLine' x1='0' y1='145' x2='130' y2='145' />
       <line class='silva playerLine' x1='200' y1='185' x2='70' y2='185' />
       <line class='ronaldo playerLine' x1='225' y1='145' x2='355' y2='145' />
       <line class='ronaldo playerLine' x1='425' y1='185' x2='295' y2='185' />
       <line class='pogba playerLine' x1='450' y1='145' x2='580' y2='145' />
       <line class='pogba playerLine' x1='650' y1='185' x2='520' y2='185' />
+      <line class='messi playerLine' x1='450' y1='145' x2='580' y2='145' />
+      <line class='messi playerLine' x1='650' y1='185' x2='520' y2='185' />
       <g class='playerName'>
         <rect class='transparent playerName otherPlayer silva' width='200' height='40' y='145' />
         <text class='transparent playerName otherPlayer silva' x='100' y='170'>Thiago Silva</text>
@@ -56,6 +61,10 @@
       <g class='playerName'>
         <rect class='transparent playerName otherPlayer pogba' width='200' height='40' x='450' y='145' />
         <text class='transparent playerName otherPlayer pogba' x='550' y='170'>Paul Pogba</text>
+      </g>
+      <g class='playerName'>
+        <rect class='transparent playerName otherPlayer messi' width='200' height='40' x='450' y='145' />
+        <text class='transparent playerName otherPlayer messi' x='550' y='170'>Lionel Messi</text>
       </g>
     </svg>
   </div>
