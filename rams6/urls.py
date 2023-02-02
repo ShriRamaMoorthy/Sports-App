@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from product.views import base_view,contact_view,home_view,news_view, player_view,world_view,add_emp,remove_emp,filter_emp,table_view,aboutus_view,points_view
+from product.views import base_view,contact_view,home_view,news_view, player_view,world_view,add_ply,remove_ply,filter_ply,table_view,aboutus_view,points_view
 
 #OR ELSE
 # from product.views import home_view
@@ -27,11 +27,11 @@ urlpatterns = [
     path('news/',news_view,name='news'),
     path('worldleague/',world_view,name='news'),
     path('admin/', admin.site.urls),
-    path('players/',player_view, name='add_emp'),
-    path('add_emp/',add_emp, name='add_emp'),
-    path('remove_emp/', remove_emp, name='remove_emp'),
-    path('remove_emp/<int:emp_id>', remove_emp, name='remove_emp'),
-    path('filter_emp/',filter_emp, name='filter_emp'),
+    path('players/',player_view, name='add_ply'),
+    path('add_emp/',add_ply, name='add_ply'),
+    path('remove_emp/', remove_ply, name='remove_ply'),
+    path('remove_emp/<int:emp_id>', remove_ply, name='remove_ply'),
+    path('filter_emp/',filter_ply, name='filter_ply'),
     path('view_all/',table_view, name='view all'),
     path('aboutus/',aboutus_view, name='view all'),
     path('pointstable/',points_view, name='view all'),
